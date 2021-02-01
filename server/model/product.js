@@ -1,12 +1,10 @@
 const mongoose =require('mongoose')
 const Schema = mongoose.Schema
  
-const productSchema = new Schema({
+const ProductSchema = new Schema({
 
-  coverimage: String,
-  name:{type: String, required:true,max:[60,'最大文字数は60です。'] },
-  coverimage:String,
-  name: String,
+  coverImage: String,
+  name:{type: String, required: true, max:[60,'最大文字数は60です'] },
   price: Number,
   description: String,
   heading1: String,
@@ -17,4 +15,4 @@ const productSchema = new Schema({
   headingtext3: String,
 })
 
-module.exports = mongoose.model('product',productSchema)
+module.exports = mongoose.model('Product',ProductSchema)

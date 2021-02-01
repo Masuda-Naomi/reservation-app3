@@ -1,7 +1,6 @@
 const Product = require('./model/product')
 
 class SampleDb {
-
   constructor() {
     this.products = [
       {

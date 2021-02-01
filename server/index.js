@@ -8,6 +8,7 @@ const productRoutes = require('./routes/products')
 mongoose.connect(config.DB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+  useCreateIndex: true
 }).then(
   () => {
     const sampleDb = new SampleDb()
