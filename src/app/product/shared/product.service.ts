@@ -17,5 +17,4 @@ export class ProductService {
     return this.http.get('/api/v1/products/' + productId)
     // return products[productId]
   }
-
 }
