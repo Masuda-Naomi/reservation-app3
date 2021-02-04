@@ -256,7 +256,7 @@
    color: $white-color;
 }
 
-.nav-text, .nav-icons{
+.nav-text, .nav-s{
     margin: $margin-bottom;
 
     > li > a{
@@ -279,7 +279,7 @@
        color: $info-color;
     }
 }
-.nav-icons > li{
+.nav-s > li{
     display: inline-block;
      > a{
         padding: 0 10px;
@@ -291,7 +291,7 @@
         width: $font-size-h4;
     }
 }
-.nav-icons.nav-stacked > li{
+.nav-s.nav-stacked > li{
     display: block;
     > a {
         margin-bottom: 20px;
