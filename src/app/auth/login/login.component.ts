@@ -20,8 +20,7 @@ errors: any = []
 
     login(loginForm: any) {
         this.authService.login(loginForm.value).subscribe(
-            (taken) => {
-                console.log(taken)
+            (token) => {
                 this.router.navigate(['./products']) // ログイン出来たらproductsに飛ぶ
             },
             (err: HttpErrorResponse) => {
